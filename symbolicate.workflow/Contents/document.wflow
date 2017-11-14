@@ -61,11 +61,11 @@
 					<key>COMMAND_STRING</key>
 					<string>export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 symbolicatecrash=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/DVTFoundation.framework/symbolicatecrash
-for f in $@
+for f in "$@"
 do
-	if [ -f $f ] &amp;&amp; [[ $f != *.symbolized ]]; then
-	    $symbolicatecrash $f 1&gt; $f".symbolized.crash"
-		open -a TextEdit $f".symbolized.crash"
+	if [ -f "$f" ] &amp;&amp; [[ "$f" != *.symbolized ]]; then
+	    $symbolicatecrash "$f" 1&gt; "$f"".symbolized.crash"
+		open -a TextEdit "$f"".symbolized.crash"
 	fi
 done</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -73,7 +73,7 @@ done</string>
 					<key>inputMethod</key>
 					<integer>1</integer>
 					<key>shell</key>
-					<string>/bin/bash</string>
+					<string>/bin/ksh</string>
 					<key>source</key>
 					<string></string>
 				</dict>
@@ -180,7 +180,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>563.500000:253.000000</string>
+				<string>563.500000:462.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
