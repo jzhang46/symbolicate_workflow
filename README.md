@@ -1,6 +1,8 @@
 # symbolicate
 
+
 ## A automator workflow to facilitate symbolicating .crash files on macOS.
+
 
 #### After installing the workflow, there'll be a new context menu for file(s) selected.
 ![context menu for symbolicate](https://github.com/jzhang46/symbolicate_workflow/blob/master/context_menu.png "Context menu for symbolciate")
